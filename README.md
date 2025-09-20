@@ -1,31 +1,10 @@
-description: Welcome to your team’s developer platform
-layout:
-width: wide
-title:
-visible: false
-description:
-visible: false
-tableOfContents:
-visible: false
-outline:
-visible: false
-pagination:
-visible: false
-metadata:
-visible: true
--------------
-
-# Developer Platform
-
-<h2 align="center">Robotics Operating System</h2>
+# Robotics operating system
 
 <p align="center">Create &amp; test robots in minutes — from camera to workflow to real-world execution.</p>
 
 <p align="center"><a href="https://your-app.link/signup" class="button primary">Sign up</a> <a href="https://your-app.link/login" class="button secondary">Log in</a></p>
 
 ---
-
-## 1) What is this product?
 
 **A modular robot OS for doers.**
 It fuses three pillars:
@@ -40,7 +19,7 @@ It fuses three pillars:
 
 ## 2) Key features & differentiators
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody>
+<table data-view="cards"><tbody>
 
 <tr>
 <td><h4>🧠</h4></td>
@@ -144,27 +123,27 @@ It fuses three pillars:
 ```mermaid
 flowchart LR
   subgraph Data_and_Sim
-    A[Scene Generator<br/>(Synthetic, Record & Replay)] --> B[Labeler<br/>RGB-D-Thermal, Motion, Size]
-    B --> C[Perception Training<br/>(Weight, Temp, Motion, Distance)]
+    A["Scene Generator (Synthetic, Record and Replay)"] --> B["Labeler (RGB-D, Thermal, Motion, Size)"]
+    B --> C["Perception Training (Weight, Temp, Motion, Distance)"]
   end
 
   subgraph Runtime
-    C --> D[Perception Runtime<br/>ROS 2 Nodes]
-    D --> E[Scene Graph<br/>Objects, Properties, Zones]
-    E --> F[Behavior Tree Studio<br/>No-code + XML]
-    F --> G[Planners & Control<br/>Nav2, MoveIt, Custom]
-    G --> H[Robot Hardware<br/>Arms, Bases, I/O]
+    C --> D["Perception Runtime (ROS 2 Nodes)"]
+    D --> E["Scene Graph (Objects, Properties, Zones)"]
+    E --> F["Behavior Tree Studio (No-code + XML)"]
+    F --> G["Planners and Control (Nav2, MoveIt, Custom)"]
+    G --> H["Robot Hardware (Arms, Bases, I/O)"]
   end
 
   subgraph Safety_and_Ops
-    I[Safety Linter<br/>Limits, Proximity, Confirms] --> F
-    J[Versioning & Rollouts] --> F
-    K[Telemetry & Logs] --> F
+    I["Safety Linter (Limits, Proximity, Confirms)"] --> F
+    J["Versioning and Rollouts"] --> F
+    K["Telemetry and Logs"] --> F
   end
 
   subgraph Marketplace
-    L[Certified Task Packs] --> F
-    F --> M[Publish & Share]
+    L["Certified Task Packs"] --> F
+    F --> M["Publish and Share"]
   end
 
   Data_and_Sim --- Runtime
@@ -230,7 +209,7 @@ Guides, hardware profiles, and step-by-step tutorials to go from idea to on-site
 
 ### Community
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody>
+<table data-card-size="large" data-view="cards"><tbody>
 <tr><td><h4>💬</h4></td><td><strong>Discord</strong></td><td>Get help, share workflows, and showcase builds.</td><td><a href="https://your-community.link" class="button secondary">Join Discord</a></td></tr>
 <tr><td><h4>🌟</h4></td><td><strong>GitHub</strong></td><td>SDKs, examples, and issue tracking.</td><td><a href="https://github.com/yourorg/robot-os" class="button secondary">View repo</a></td></tr>
 </tbody></table>
