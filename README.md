@@ -116,7 +116,7 @@ It fuses three pillars:
 
 ---
 
-## 5) TL;DR + ecosystem diagram
+## 5) Ecosystem diagram
 
 **You bring a robot and a task. We bring perception, a friendly workflow editor, and a safety-first path from sim to real. Share or sell your workflows in the marketplace and compound the ecosystem.**
 
@@ -153,18 +153,13 @@ flowchart LR
 
 ---
 
-{% columns %}
-{% column %}
-
 ### Get started in 5 minutes
 
 Pick a hardware profile, connect sensors, open BT Studio. Choose a template, hit **Simulate**, then deploy to your ROS 2 graph.
 
 <a href="https://your-app.link/start" class="button primary" data-icon="rocket-launch">Get started</a> <a href="https://your-app.link/api" class="button secondary" data-icon="terminal">API reference</a>
-{% endcolumn %}
 
-{% column %}
-{% code title="Example: spawn a workflow (TypeScript SDK)" overflow="wrap" %}
+{% img title="Example: spawn a workflow (TypeScript SDK)" overflow="wrap" %}
 
 ```ts
 import { Client } from "@yourorg/robot-os";
@@ -182,28 +177,16 @@ await sdk.workflows.simulate(wf.id, { scene: "kitchen_line_a" });
 await sdk.workflows.deploy(wf.id, { robotId: "ROBOT-001" });
 ```
 
-{% endcode %}
-{% endcolumn %}
-{% endcolumns %}
-
-{% columns %}
-{% column %}
-
 <figure>
   <img src=".gitbook/assets/hero.png" alt="">
   <figcaption>From Sim → Real in one click.</figcaption>
 </figure>
-{% endcolumn %}
-
-{% column %}
 
 ### Learn more
 
 Guides, hardware profiles, and step-by-step tutorials to go from idea to on-site pilot.
 
 <a href="https://your-app.link/guides" class="button primary" data-icon="book-open">Guides</a> <a href="https://your-app.link/docs" class="button secondary" data-icon="book">Documentation</a>
-{% endcolumn %}
-{% endcolumns %}
 
 ---
 
